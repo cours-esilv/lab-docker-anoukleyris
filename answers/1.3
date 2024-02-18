@@ -1,3 +1,4 @@
-docker build -t python_image -f DOCKERFILE .
-docker run -p 8080:5000 -e CURRENT_ENVIRONMENT=production --name container_MLOPS python_image
+docker build -t myapp -f Dockerfile .
+docker run -d --name container_myapp myapp
+
 
