@@ -1,0 +1,1 @@
+docker run -d -p 8081:80 --name objective_neumann --env WS_BACK_URL=http://localhost:8080 anouk1234/myhtml:v1.0
