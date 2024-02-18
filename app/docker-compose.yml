@@ -6,3 +6,10 @@ services:
       - "8080:5000" 
     environment:
       CURRENT_ENVIRONMENT: development
+      
+  front-service: 
+    image: anouk1234/myhtml:v1.0  
+    ports:
+      - "8081:80"  
+    environment:
+      WS_BACK_URL: "http://back-service:5000"
