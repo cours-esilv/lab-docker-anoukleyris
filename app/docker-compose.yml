@@ -1,4 +1,8 @@
 version: '3'
 services:
-  my-service:
-    image: my-image
+  back-end:
+    image: anouk1234/myapp:v1.0  
+    ports:
+      - "8080:5000" 
+
+
