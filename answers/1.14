@@ -1,2 +1,2 @@
-docker rm container-flask-development-mlops
-docker rm container-front-enddocker rmi anouk1234/myhtml:v1.0 anouk1234/myapp:v1.0
+docker stop $(docker ps -q)
+docker rm $(docker ps -a -q)
